@@ -1,0 +1,186 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #fff6f0;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url("assets/hilos-al-costado.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 40vh;
+    max-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-align: center;
+    color: rgb(219, 191, 30);
+    padding-right: 4rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #1f3a5f;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6),
+        0 2px 6 px rgba(255, 255, 255, 0.4);
+    margin-bottom: 0.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #355f7a;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #f4a261;
+}
+
+nav a {
+    text-decoration: none;
+    color: #264653;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #e76f51;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+#productos {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #264653;
+}
+
+#productos article {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#productos img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #e76f51;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d45a3c;
+}
+
+section {
+    margin-bottom: 3rem;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#sobre-mi img{
+    width: 100%;
+    max-width: 280px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    }
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f0e6df;
+    font-size: 0.9rem;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+    header {
+        align-items: center;
+        text-align: center;
+        padding-right: 1rem;
+    }
+
+    #productos {
+        display: block;
+    }
+
+    #productos .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
