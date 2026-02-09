@@ -130,6 +130,110 @@ section {
     align-items: center;
     text-align: center;
 }
+.catalogo {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.catalogo h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.precio {
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.producto-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.detalle-producto {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.detalle-producto img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.detalle-producto h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #264653;
+}
+
+.detalle-producto .precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2a9d8f;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.relacionados {
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.relacionados h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #264653;
+}
 
 #sobre-mi img{
     width: 100%;
@@ -183,4 +287,18 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+@media (max-width: 768px) {
+  .detalle-producto {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .detalle-producto h1 {
+    font-size: 1.6rem;
+  }
+
+  .detalle-producto .precio {
+    font-size: 1.3rem;
+  }
+}
 }
